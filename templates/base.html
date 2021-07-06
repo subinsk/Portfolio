@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}
-    
-    {% endblock title %} </title>
-</head>
-<body>
-    {% block home_body %}
-    {% endblock home_body %}
 
+        {% endblock title %} </title>
+    <link rel="stylesheet" href="/static/styles/base.css">
+    <link rel="stylesheet" href="/static/styles/homepage.css">
+</head>
+
+<body>
+    <div class="bimg">
+        <header>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Projects</li>
+            </ul>
+            
+
+        </header>
+        {% block home_body %}
+        {% endblock home_body %}
+
+        <footer>
+             <h5>Copyright &copy; 2021</h2>
+             <span id="f_outro">Made with 🤍 by <a style="text-decoration: underline; color: white;" href="https://www.linkedin.com/in/subin-s-k-9b767219a/">Subin S K</a></span> 
+        </footer>
+    </div>
 </body>
+
 </html>

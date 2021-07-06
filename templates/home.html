@@ -1,11 +1,28 @@
 {% extends "base.html" %}
 {% block title %} Home {% endblock title %}
+<link rel="stylesheet" href="/static/styles/homepage.css">
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
 <body>
     {% block home_body %}
-        <h1>This is a Home page</h1>
+    <div class="intro_cont">
+        <span id="ic_one" class="ic_cont">Hey There!</span>
+        <span id="ic_two" class="ic_cont">I am Subin S K</span>
+    </div>
+
+    <div class="about">
+        <div class="abt_icon"></div>
+        <p id="abt_cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias similique consequuntur eius fugit voluptates praesentium molestiae sint dolorem asperiores rerum.</p>
+    </div>
+    <div class="education">
+        <div class="edu_icon"></div>
+        <p id="edu_cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias similique consequuntur eius fugit voluptates praesentium molestiae sint dolorem asperiores rerum.</p>
+    </div>
 
 
+
+    <!-- Scripts -->
     {% endblock home_body %}
 </body>
+
 </html>
