@@ -6,13 +6,15 @@
     font-family: 'Open Sans', sans-serif;
 }
 body{
-    overflow: scroll;
+    overflow: auto;
 }
 header{
-    position: -webkit-sticky;
-    position: sticky;
     display: flex;
+    position: fixed;
     flex-direction: row;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
 }
 ul{
     display: flex;
