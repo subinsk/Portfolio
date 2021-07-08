@@ -1,6 +1,6 @@
 function Home(){
     $('html, body').animate({
-        'scrollTop' : $(".home").position().top
+        'scrollTop' : $(".intro_cont").position().top
     });
 }
 function About(){
@@ -21,6 +21,11 @@ function Education(){
 function Projects(){
     $('html, body').animate({
         'scrollTop' : $(".projects").position().top
+    });
+}
+function Certificates(){
+    $('html, body').animate({
+        'scrollTop' : $(".certificates").position().top
     });
 }
 function Contact(){

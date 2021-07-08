@@ -8,7 +8,8 @@
     <title>{% block title %}
 
         {% endblock title %} </title>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/static/styles/base.css">
     <link rel="stylesheet" href="/static/styles/homepage.css">
 </head>
@@ -16,23 +17,41 @@
 <body>
     <div class="bimg">
         <header>
-            <ul>
-                <li onclick="Home()">Home</li>
-                <li onclick="About()">About</li>
-                <li onclick="Skills()">Skills</li>
-                <li onclick="Education()">Education</li>
-                <li onclick="Projects()">Projects</li>
-                <li onclick="Contact()">Contact</li>
-            </ul>
-            
+            <div class="headers">
+                <ul>
+                    <li onclick="Home()">Home</li>
+                    <li onclick="About()">About</li>
+                    <li onclick="Skills()">Skills</li>
+                    <li onclick="Education()">Education</li>
+                    <li onclick="Certificates()">Certifications</li>
+                    <li onclick="Projects()">Projects</li>
+                    <li onclick="Contact()">Contact</li>
+                </ul>
+            </div>
+            <div class="sm_header">
+                <a href=""><img class="sm_icons" src="/static/images/gmail_header.png" alt="Gmail"></a>
+                <a href="https://www.linkedin.com/in/subin-s-k-9b767219a/"><img class="sm_icons" src="/static/images/linkedin_header.png" alt="LinkedIn"></a>
+                <a href="https://github.com/subinsk"><img class="sm_icons" src="/static/images/github_header.png" alt="GitHub"></a>
+                <a href="https://www.instagram.com/subin_sk/"><img class="sm_icons" src="/static/images/instagram_header.png" alt="Instagram"></a>
+            </div>
+
 
         </header>
         {% block home_body %}
         {% endblock home_body %}
 
         <footer>
-             <h5>Copyright &copy; 2021</h2>
-             <span id="f_outro">Made with 🤍 by <a style="text-decoration: underline; color: white;" href="https://www.linkedin.com/in/subin-s-k-9b767219a/">Subin S K</a></span> 
+            <div class="footer_cont">
+                <h5>Copyright &copy; 2021</h2>
+                <span id="f_outro">Made with 🤍 by <a style="text-decoration: underline; color: white;" href="https://www.linkedin.com/in/subin-s-k-9b767219a/">Subin S K</a></span>
+            </div>
+            <div class="sm_footer">
+                <a href=""><img class="sm_icons_footer" src="/static/images/gmail_footer.png" alt="Gmail"></a>
+                <a href="https://www.linkedin.com/in/subin-s-k-9b767219a/"><img class="sm_icons_footer" src="/static/images/linkedin_footer.png" alt="LinkedIn"> </a>
+                <a href="https://github.com/subinsk"><img class="sm_icons_footer" src="/static/images/github_footer.png" alt="GitHub"> </a>
+                <a href="https://www.instagram.com/subin_sk/"><img class="sm_icons_footer" src="/static/images/instagram_footer.png" alt="Instagram"></a>
+            </div>
+            
         </footer>
     </div>
 </body>

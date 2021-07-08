@@ -8,10 +8,15 @@
 body{
     overflow: auto;
 }
+a{
+    text-decoration: none;
+}
 header{
     display: flex;
     position: fixed;
     flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 1px 6px 0px #888888 ;
     width: 100%;
     z-index: 999;
     background-color: white;
@@ -26,6 +31,35 @@ li{
     margin: 0.5rem;
     list-style-type: none;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+
+}
+li:hover{
+    
+    -webkit-moz-transform: scale(1.1);
+    -webkit-ms-transform: scale(1.1);
+    transform: scale(1.1);
+    text-shadow: 0px 0.1px #272626b4;
+}
+
+.sm_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sm_icons{
+    transition: all .2s ease-in-out;
+    width: 1.7rem;
+    height: auto;
+    margin: 0.7rem;
+}
+.sm_icons:hover{
+    -webkit-moz-transform: scale(1.1);
+    -webkit-ms-transform: scale(1.1);
+    transform: scale(1.1);
+    
+
 }
 
 footer{
@@ -36,7 +70,19 @@ footer{
     align-items: center;
     padding: 1.3rem;
 }
-
+.footer_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #f_outro{
     font-size: 10px;
+}
+
+.sm_icons_footer{
+    filter: invert();
+    width: 1.7rem;
+    height: auto;
+    margin: 0.7rem;
 }
