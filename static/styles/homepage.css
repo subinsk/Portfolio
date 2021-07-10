@@ -20,14 +20,20 @@
     width: 100%;
     height: 100vh;
     flex-direction: column;
-    background-color: rgb(121, 121, 207);
+    
 
     
 }
-span,p{
-    margin: 0.5rem;
-}
+.bimg{
+    background-image: url('/static/images/bimg1.jpg');
+    background-repeat: no-repeat;
+    z-index: -4;
+    background-size: cover;
+    height: 50rem;
+    width: auto;
+   
 
+}
 .ic_cont{
     font-family: 'Akaya Kanadaka', cursive;
     color: white;
@@ -43,7 +49,7 @@ span,p{
 }
 
 .cont_heading{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
 }
 /* About Section */
 
@@ -176,6 +182,8 @@ span,p{
     width: 100%;
     height: 100%;
 }
+
+
 /* Certificates Section */
 
 .certificates{
@@ -202,25 +210,44 @@ span,p{
     
 }
 
-.cards{
-    height: 100%;
-    width: 100%;
+
+
+
+  .cer_img {
+      width: 13rem;
+      margin: 0.4rem;
+      height: auto;
+    /* transform: scale(0.6); */
+  }
+ 
+ 
+  .cards{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
 }
-.card {
+
+.card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; 
-    padding: 0rem;
-  }
-
-  .cer_img {
-      width: 10rem;
-      height: 6rem;
-    transform: scale(0.6);
-  }
-  .card:hover {
+    padding: 0.5rem;
+    margin: 1rem;
+    height: 14.5rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+.card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
-  .card_cont {
-    
-  }  
+.card_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
