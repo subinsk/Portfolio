@@ -5,14 +5,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+a{
+    color: inherit;
+}
 .bimg{
-   
-    z-index: -2;
+    background-image: url('/static/images/bimg/bimg5.jpg');
+    background-repeat: no-repeat;
+    z-index: -4;
+    background-size: cover;
+    height: 40rem;
+    filter: blur(4px) opacity(2px);
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(4px) opacity(2px);
-}
+   
 
+}
 .intro_cont{
     display: flex;
     justify-content: center;
@@ -23,16 +31,6 @@
     
 
     
-}
-.bimg{
-    background-image: url('/static/images/bimg1.jpg');
-    background-repeat: no-repeat;
-    z-index: -4;
-    background-size: cover;
-    height: 50rem;
-    width: auto;
-   
-
 }
 .ic_cont{
     font-family: 'Akaya Kanadaka', cursive;
@@ -110,6 +108,7 @@
     flex-direction: row;
     height: auto;
     padding: 2rem 1rem 2rem 1rem;
+    row-gap: 1rem;
 
 }
 
@@ -120,6 +119,7 @@
     align-items: center;
     width: 30rem;
     height: 20rem;
+    margin-right: 1.5rem;
 }
 #edu_icon{
     width: auto;
@@ -128,26 +128,26 @@
 
     
 }
-
 .edu_cards{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
- 
-
-
 }
 
 .edu_card{
     display: flex;
     border-radius: 1.4rem;
     flex-direction: column;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 2rem;
+    height: 15rem;
+    width: auto;
+    margin: 1.5rem;
     transition: 0.3s;
-    background-color: whitesmoke;
+    color: white;
+    background-image: linear-gradient(to bottom right, #002240 , #1a7ca3);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
 }
 
 
@@ -228,16 +228,11 @@
     
 }
 
-
-
-
   .cer_img {
       width: 13rem;
       margin: 0.4rem;
       height: auto;
-    /* transform: scale(0.6); */
   }
- 
  
   .cards{
     display: flex;
@@ -260,9 +255,11 @@
     justify-content: flex-start;
     align-content: center;
 }
+
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
+
 .card_cont{
     display: flex;
     flex-direction: column;
