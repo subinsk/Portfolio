@@ -15,11 +15,6 @@ function Home(){
         'scrollTop' : $(".intro_cont").position().top
     });
 }
-function About(){
-    $('html, body').animate({
-        'scrollTop' : $(".about").position().top
-    });
-}
 function Skills(){
     $('html, body').animate({
         'scrollTop' : $(".skills").position().top

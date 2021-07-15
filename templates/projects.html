@@ -1,23 +1,86 @@
-{% extends "base.html" %}
-{% block title %} projects {% endblock title %}
-<link rel="stylesheet" href="/static/styles/projects.css">
-<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/projects.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Projects @Subin</title>
+</head>
 <body>
-    
-    {% block projects_body %}
-    
+    <div class="m_header">
+        <h4 style="color: white;">Subin S K</h4>
+        <img class="hb_icon" src="https://img.icons8.com/material-rounded/96/000000/menu.png"/>
+    </div>
+    <header>
+        <div class="headers">
+            <ul>
+                <li onclick="Home()">Home</li>
+                <li onclick="Skills()">Skills</li>
+                <li onclick="Education()">Education</li>
+                <li onclick="Certificates()">Certifications</li>
+                <li><a href="/projects">Projects</a></li>
+                <li onclick="Contact()">Contact</li>
+            </ul>
+        </div>
+        <div class="sm_header">
+            <a href=""><img class="sm_icons" src="/static/images/icons/gmail_footer.png" alt="Gmail"></a>
+            <a href="https://www.linkedin.com/in/subin-s-k-9b767219a/"><img class="sm_icons" src="/static/images/icons/linkedin_footer.png" alt="LinkedIn"></a>
+            <a href="https://github.com/subinsk"><img class="sm_icons" src="/static/images/icons/github_footer.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/subin_sk/"><img class="sm_icons" src="/static/images/icons/instagram_footer.png" alt="Instagram"></a>
+        </div>
+    </header>
     <div class="projects">
         <div class="projects_icon"><img id="projects_icon" src="/static/images/icons/projects_icon.png" alt="Projects">
             <p class="cont_heading">Projects</p>
         </div>
-        
-            <div class="pr_cards">
-                <div class="pr_card">
-                    
-                </div>
+        <div class="pr_cards">
+            <div class="pr_card" style="background-image: url(/static/images/projects/1.jpg); ">
+                <div class="card_con"></div>
+                <h3>Posmate</h3>
             </div>
-    
+            <div class="pr_card" style="background-image: url(/static/images/projects/DSC.svg); ">
+                <div class="card_con"></div>
+                <h3>DSC-CTAE</h3>
+            </div>
+            <div class="pr_card" style="background-image: url(/static/images/projects/srijan.png); ">
+                <div class="card_con"></div>
+                <h3>Srijan Academy</h3>
+            </div>
+            <div class="pr_card" style="background-image: url(/static/images/projects/geekbot.jpg);">
+                <div class="card_con"></div>
+                <h3>GeekBOT</h3>
+            </div>
+            <div class="pr_card" style="background-image: url(/static/images/projects/kryptocase.png); background-size: cover;">
+                <div class="card_con"></div>
+                <h3>Kryptocase</h3>
+            </div>
+        </div>
     </div>
-    {% endblock projects_body %}
+
+    <footer>
+        <div class="footer_cont">
+            <h5>Copyright &copy; <span id="year"></span></h2>
+            <span id="f_outro">Made with 🤍 by <a style="text-decoration: underline; color: white;" href="https://www.linkedin.com/in/subin-s-k-9b767219a/">Subin S K</a></span>
+        </div>
+        <div class="sm_footer">
+            <a href=""><img class="sm_icons_footer" src="/static/images/icons/gmail_footer.png" alt="Gmail"></a>
+            <a href="https://www.linkedin.com/in/subin-s-k-9b767219a/"><img class="sm_icons_footer" src="/static/images/icons/linkedin_footer.png" alt="LinkedIn"> </a>
+            <a href="https://github.com/subinsk"><img class="sm_icons_footer" src="/static/images/icons/github_footer.png" alt="GitHub"> </a>
+            <a href="https://www.instagram.com/subin_sk/"><img class="sm_icons_footer" src="/static/images/icons/instagram_footer.png" alt="Instagram"></a>
+        </div>
+        
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/static/scripts/projects.js"></script>
 </body>
+</html>
+
+
+    
+
+
+

@@ -1,19 +1,19 @@
 {% extends "base.html" %}
 {% block title %} Home {% endblock title %}
+{% block css %}
+
 <link rel="stylesheet" href="/static/styles/home.css">
+<link rel="stylesheet" href="/static/styles/home_mq.css">
+{% endblock css %}
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
 <body>
     {% block home_body %}
 
     <div class="intro_cont">
-
         <span id="ic_one" class="ic_cont">Hey There!</span>
         <span id="ic_two" class="ic_cont">I am Subin S K</span>
-        <p id="abt_cont">I am a passionate Developer, I like to develop things which will bring a change in community.
-            <br>Automation with Intelligence fascinates me, that's why I am a ML/AI
-            enthusiast.
-        </p>
+        <p id="abt_cont">I am a passionate Developer, I like to develop things which will bring a change in community.<br>Automation with Intelligence fascinates me, that's why I am a ML/AI enthusiast.</p>
     </div>
     </div>
 
@@ -21,10 +21,11 @@
         <div class="skills_icon"><img id="skills_icon" src="/static/images/icons/skills_icon.png" alt="Skills">
             <p class="cont_heading">Skills </p>
         </div>
-        <p id="skills_cont"><img id="skills_png" src="/static/images/skills/skills.png" alt="Skills"></p>
+        <img id="skills_png" src="/static/images/skills/skills.png" alt="Skills">
     </div>
     <div class="education">
-        <div class="edu_icon"><img id="edu_icon" src="/static/images/icons/education_icon.png" alt="Education">
+        <div class="edu_icon">
+            <img id="edu_icon" src="/static/images/icons/education_icon.png" alt="Education">
             <p class="cont_heading">Education</p>
         </div>
         <div class="edu_cards">
@@ -32,27 +33,19 @@
                 <h2>College of Technology and Enginnering, Udaipur (RAJ.)</h2>
                 <h4>Major: </h4>
                 <p>B. Tech. in CSE</p>
-
                 <h3>Graduation Year: 2024</h3>
             </div>
             <div class="edu_card">
                 <h2>Jawahar Navodaya Vidyalya, Jalore</h2>
                 <h4>Major: </h4>
                 <p>12th: Physics, Chemistry, Maths</p>
-                <ul>
-                    <li>Computer Science</li>
-                </ul>
-
             </div>
             <div class="edu_card">
                 <h2>Jawahar Navodaya Vidyalya, Jalore</h2>
                 <h4>Major: </h4>
                 <p>10th: Physics, Chemistry, Maths</p>
-
-
             </div>
         </div>
-
     </div>
 
     <div class="certificates">
@@ -62,25 +55,21 @@
         </div>
         <div class="cards">
             <div class="card">
-                <img class="cer_img" src="/static/images/certificates/cicada_certificate.jpg" alt="Cicada Certificate">
+                <a href="https://www.dropbox.com/s/fwtr00ash2wugw5/Subin%20SK%20Certificate%20-%20Cicada%203301.pdf?dl=0"><img class="cer_img" src="/static/images/certificates/cicada_certificate.jpg" alt="Cicada Certificate"></a>
                 <div class="card_cont">
                     <h4><b>Cicada 3301: Reinvented</b></h4>
                 </div>
             </div>
             <div class="card">
-                <img class="cer_img" src="/static/images/certificates/shapeai_bootcamp.jpg" alt="Cicada Certificate">
+                <a href="https://www.dropbox.com/s/mnmijin7znrb1a7/Subin%20S%20K%20ShapeAI%20Bootcamp.pdf?dl=0"><img class="cer_img" src="/static/images/certificates/shapeai_bootcamp.jpg" alt="Cicada Certificate"></a>
                 <div class="card_cont">
                     <h4><b>ShapeAI Bootcamp</b></h4>
                 </div>
             </div>
         </div>
-
     </div>
-
-
 
     <!-- Scripts -->
     {% endblock home_body %}
 </body>
-
 </html>

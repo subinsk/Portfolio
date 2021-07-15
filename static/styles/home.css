@@ -10,11 +10,13 @@ a{
     color: inherit;
 }
 .bimg{
+
     background-image: url('/static/images/bimg/bimg5.jpg');
     background-repeat: no-repeat;
     z-index: -4;
     background-size: cover;
     height: 40rem;
+    width: 100%;
     filter: blur(4px) opacity(2px);
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,12 +31,15 @@ a{
     height: 100vh;
     flex-direction: column;
     
+    
+    
 
     
 }
 .ic_cont{
     font-family: 'Akaya Kanadaka', cursive;
     color: white;
+    
 }
 
 #ic_one{
@@ -54,7 +59,7 @@ a{
 
 #abt_cont{
     margin: 1rem;
-    
+    flex-wrap: wrap;
     color: white;
     width: 100%;
     height: 15rem;
@@ -68,7 +73,7 @@ a{
 .skills{
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 40rem;
     background-color: whitesmoke;
     padding: 2rem 1rem 2rem 1rem;
 
@@ -77,6 +82,7 @@ a{
 .skills_icon{
     display: flex;
     flex-direction: row;
+
     justify-content: center;
     align-items: center;
     width: 30rem;
@@ -90,14 +96,10 @@ a{
     
 }
 
-.skills_cont{
-    width: 100%;
-    height: 100%;
-}
-
 #skills_png{
-    height: 83vh;
     width: auto;
+    height: auto;
+    
 }
 
 
@@ -105,6 +107,7 @@ a{
 
 .education{
     display: flex;
+    /* flex-wrap: wrap; */
     flex-direction: row;
     height: auto;
     padding: 2rem 1rem 2rem 1rem;
@@ -125,8 +128,6 @@ a{
     width: auto;
     height: 5.5rem;
     margin: 1rem;
-
-    
 }
 .edu_cards{
     width: 100%;
@@ -137,16 +138,18 @@ a{
 
 .edu_card{
     display: flex;
-    border-radius: 1.4rem;
     flex-direction: column;
+    width: auto;
+    justify-content: space-evenly;
+    
     padding: 2rem;
     height: 15rem;
-    width: auto;
     margin: 1.5rem;
-    transition: 0.3s;
+    border-radius: 1.4rem;
     color: white;
-    background-image: linear-gradient(to bottom right, #002240 , #1a7ca3);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-image: linear-gradient(to bottom right, #002240 , #1a7ca3);
+    transition: 0.3s;
     
 }
 
@@ -154,6 +157,7 @@ a{
 /* Projects Section */
 .projects{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     height: 100vh;
     padding: 2rem 1rem 2rem 1rem;
@@ -206,6 +210,7 @@ a{
 
 .certificates{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     height: 100vh;
     padding: 2rem 1rem 2rem 1rem;
@@ -266,3 +271,5 @@ a{
     justify-content: center;
     align-content: center;
 }
+
+
