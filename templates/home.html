@@ -4,28 +4,34 @@
 
 <link rel="stylesheet" href="/static/styles/home.css">
 <link rel="stylesheet" href="/static/styles/home_mq.css">
+<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+
 {% endblock css %}
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
 <body>
     {% block home_body %}
 
-    <div class="intro_cont">
+    <div class="intro_cont auto-center">
         <span id="ic_one" class="ic_cont">Hey There!</span>
         <span id="ic_two" class="ic_cont">I am Subin S K</span>
-        <p id="abt_cont">I am a passionate Developer, I like to develop things which will bring a change in community.<br>Automation with Intelligence fascinates me, that's why I am a ML/AI enthusiast.</p>
+        <p id="abt_cont" class="auto-center">I am a passionate Developer, I like to develop things which will bring a change in
+            community.<br>Automation with Intelligence fascinates me, that's why I am a ML/AI enthusiast.</p>
     </div>
     </div>
 
-    <div class="skills">
-        <div class="skills_icon"><img id="skills_icon" src="/static/images/icons/skills_icon.png" alt="Skills">
+    <div class="skills auto-center">
+        <div class="skills_icon auto-center">
+            <img id="skills_img" src="/static/images/icons/skills_icon.png" alt="Skills">
             <p class="cont_heading">Skills </p>
         </div>
-        <img id="skills_png" src="/static/images/skills/skills.png" alt="Skills">
+        <div>
+            <img id="skills_png" src="/static/images/skills/skills.png" alt="Skills">
+        </div>
     </div>
-    <div class="education">
-        <div class="edu_icon">
-            <img id="edu_icon" src="/static/images/icons/education_icon.png" alt="Education">
+    <div class="education auto-center">
+        <div class="edu_icon auto-center">
+            <img id="edu_img" src="/static/images/icons/education_icon.png" alt="Education">
             <p class="cont_heading">Education</p>
         </div>
         <div class="edu_cards">
@@ -48,28 +54,52 @@
         </div>
     </div>
 
-    <div class="certificates">
-        <div class="certificates_icon"><img id="certificates_icon" src="/static/images/icons/certificate_icon.png"
+    <div class="certificates auto-center">
+        <div class="certificates_icon auto-center"><img id="certificates_img" src="/static/images/icons/certificate_icon.png"
                 alt="certificates">
             <p class="cont_heading">Certifications</p>
         </div>
         <div class="cards">
             <div class="card">
-                <a href="https://www.dropbox.com/s/fwtr00ash2wugw5/Subin%20SK%20Certificate%20-%20Cicada%203301.pdf?dl=0"><img class="cer_img" src="/static/images/certificates/cicada_certificate.jpg" alt="Cicada Certificate"></a>
-                <div class="card_cont">
+                <a
+                    href="https://www.dropbox.com/s/fwtr00ash2wugw5/Subin%20SK%20Certificate%20-%20Cicada%203301.pdf?dl=0"><img
+                        class="cer_img" src="/static/images/certificates/cicada_certificate.jpg"
+                        alt="Cicada Certificate"></a>
+                <div class="card_cont auto-center">
                     <h4><b>Cicada 3301: Reinvented</b></h4>
                 </div>
             </div>
             <div class="card">
-                <a href="https://www.dropbox.com/s/mnmijin7znrb1a7/Subin%20S%20K%20ShapeAI%20Bootcamp.pdf?dl=0"><img class="cer_img" src="/static/images/certificates/shapeai_bootcamp.jpg" alt="Cicada Certificate"></a>
-                <div class="card_cont">
+                <a href="https://www.dropbox.com/s/mnmijin7znrb1a7/Subin%20S%20K%20ShapeAI%20Bootcamp.pdf?dl=0"><img
+                        class="cer_img" src="/static/images/certificates/shapeai_bootcamp.jpg"
+                        alt="Cicada Certificate"></a>
+                <div class="card_cont auto-center">
                     <h4><b>ShapeAI Bootcamp</b></h4>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="email auto-center">
+        <form action="mailto:subinsk284@gmail.com" class="pageclip-form"
+            method="post">
+            <h2>Contact Me</h2>
+            <input type="text" name="name" placeholder="Enter your name" id="" required>
+            <input type="text" name="email" placeholder="Enter your email" id="" required>
+            <textarea name="body" placeholder="Enter your message" required></textarea>
+            <div class="e_btns">
+                <button type="submit" value="Submit" class="button pageclip-form__submit"><span>Send</span></button>
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+    </div>
+
     <!-- Scripts -->
+    <script type="commonjs" src="/static/scripts/home.js"></script>
+    <script type="commonjs" src="/static/scripts/anime.min.js"></script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     {% endblock home_body %}
 </body>
+<!-- https://send.pageclip.co/5EC76pVeJ5ZWNgP4Xbt5Zcq5RaKQoLi5/portfolio -->
 </html>

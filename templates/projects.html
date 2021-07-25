@@ -16,46 +16,103 @@
     </div>
     <header>
         <div class="headers">
-            <ul>
-                <li onclick="Home()">Home</li>
-                <li onclick="Skills()">Skills</li>
-                <li onclick="Education()">Education</li>
-                <li onclick="Certificates()">Certifications</li>
-                <li><a href="/projects">Projects</a></li>
-                <li onclick="Contact()">Contact</li>
-            </ul>
-        </div>
-        <div class="sm_header">
-            <a href=""><img class="sm_icons" src="/static/images/icons/gmail_footer.png" alt="Gmail"></a>
-            <a href="https://www.linkedin.com/in/subin-s-k-9b767219a/"><img class="sm_icons" src="/static/images/icons/linkedin_footer.png" alt="LinkedIn"></a>
-            <a href="https://github.com/subinsk"><img class="sm_icons" src="/static/images/icons/github_footer.png" alt="GitHub"></a>
-            <a href="https://www.instagram.com/subin_sk/"><img class="sm_icons" src="/static/images/icons/instagram_footer.png" alt="Instagram"></a>
+            <button class="h_comp">
+                <a href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                    </svg> 
+                &nbsp;Back to Home
+                </a>
+            </button>
         </div>
     </header>
     <div class="projects">
-        <div class="projects_icon"><img id="projects_icon" src="/static/images/icons/projects_icon.png" alt="Projects">
+        <div class="projects_icon">
+            <img id="projects_icon" src="/static/images/icons/projects_icon.png" alt="Projects">
             <p class="cont_heading">Projects</p>
         </div>
         <div class="pr_cards">
-            <div class="pr_card" style="background-image: url(/static/images/projects/1.jpg); ">
-                <div class="card_con"></div>
-                <h3>Posmate</h3>
+            <div class="pr_card" id="posmat"  onclick="posmate()">
+                <div class="card_img" style="background-image: url(/static/images/projects/1.jpg); "></div>
+                <div class="card_cont"><h3>Posmate</h3></div>
             </div>
-            <div class="pr_card" style="background-image: url(/static/images/projects/DSC.svg); ">
-                <div class="card_con"></div>
-                <h3>DSC-CTAE</h3>
+            <div class="pr_card" id="DSC" onclick="DSC()">
+                <div class="card_img" style="background-image: url(/static/images/projects/DSC.svg); "></div>
+                <div class="card_cont"><h3>DSC-CTAE</h3></div>
             </div>
-            <div class="pr_card" style="background-image: url(/static/images/projects/srijan.png); ">
-                <div class="card_con"></div>
-                <h3>Srijan Academy</h3>
+            <div class="pr_card" id="srijan" onclick="srijan()">
+                <div class="card_img" style="background-image: url(/static/images/projects/srijan.png); "></div>
+                <div class="card_cont"><h3>Srijan Academy</h3></div>
             </div>
-            <div class="pr_card" style="background-image: url(/static/images/projects/geekbot.jpg);">
-                <div class="card_con"></div>
-                <h3>GeekBOT</h3>
+            <div class="pr_card" id="geek" onclick="geek()">
+                <div class="card_img" style="background-image: url(/static/images/projects/geekbot.jpg);"></div>
+                <div class="card_cont"><h3>GeekBOT</h3></div>
             </div>
-            <div class="pr_card" style="background-image: url(/static/images/projects/kryptocase.png); background-size: cover;">
-                <div class="card_con"></div>
-                <h3>Kryptocase</h3>
+            <div class="pr_card" id="krypto" onclick="krypto()">
+                <div class="card_img" style="background-image: url(/static/images/projects/kryptocase.png); background-size: cover;"></div>
+                <div class="card_cont"><h3>Kryptocase</h3></div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="pr_des">
+        <div class="pr">
+            <div class="pr_head">Posmate</div>
+            <div class="pr_tech">
+                <p>A Robust AI-Driven System (Web App) That Monitors : Posture (7 Body KeyPoints) Relative Distance from Display Which Notifies User when his/her Posture or Relative Distance is Wrong with a Suggestion on how to improve it! Using</p>
+            </div>
+            <div class="pr_abt">
+
+            </div>
+
+        </div>
+        <div class="pr">
+            <div class="pr_head">DSC-CTAE</div>
+            <div class="pr_tech">
+
+            </div>
+            <div class="pr_abt">
+                <ul>
+                    <li>Logo design</li>
+                    <li>Login/Signup User system</li>
+                    <li>A Status Bar which shows there activesness</li>
+                    <li>Submission History</li>
+                    <li>Blog which keeps up-to-date about current Tech/Programmming things</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pr">
+            <div class="pr_head">Srijan Academy</div>
+            <div class="pr_tech">
+
+            </div>
+            <div class="pr_abt">
+                <ul>
+                    <li>Login/Signup User system</li>
+                    <li>Courses are regularly updated to the current rating</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pr">
+            <div class="pr_head">GeekBOT</div>
+            <div class="pr_tech">
+                <p>Discord Python Library </p>
+            </div>
+            <div class="pr_abt">
+                <ul>
+                    <li>Administrative commands</li>
+                    <li>Notifies anout latest hackathons, contests</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pr">
+            <div class="pr_head">Kryptocase</div>
+            <div class="pr_tech">
+                <p>API which gives Real Time API</p>
+                <p>tkinter for GUI</p>
+            </div>
+            <div class="pr_abt">
+                
             </div>
         </div>
     </div>
@@ -75,7 +132,8 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="/static/scripts/projects.js"></script>
+    <script type="module" src="/static/scripts/projects.js"></script>
+    <script type="commonjs" src="/static/scripts/anime.min.js"></script>
 </body>
 </html>
 
