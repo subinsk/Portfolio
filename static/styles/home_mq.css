@@ -1,4 +1,53 @@
+@media only screen and (max-width: 1230px){
+    /* Skills */
+
+    .skills{
+        flex-direction: column;
+    }
+    #skills_png{
+        max-width: 32rem;
+        min-width: 20rem;
+    }
+
+    /* Education */
+
+    .education{
+        flex-direction: column;
+
+    }
+    .cards{
+        flex-direction: column;
+    }
+
+
+    /* Education */
+
+    .edu_card{
+        max-width: 37rem;
+    }
+    .ec_head{
+        font-size: 1.4rem;
+    }
+    
+    .ec_1{
+        font-size: 1.2rem;
+    }
+    .ec_2{
+        font-size: 0.8rem;
+    }
+    .ec_3{
+        font-size: 1.2rem;
+    }
+    
+    #ic_one{
+      margin-top: 3rem;
+    }
+
+
+}
+
 @media only screen and (max-width: 880px){
+    /* Header */
     header{
         display: none;
     }
@@ -13,17 +62,94 @@
         filter: invert();
 
     }
+
+    /* Background Image */
     .bimg{
         background-image: url('/static/images/bimg/bimg6.jpg');
         width: 100%;
         height: 100vmax;
     }
+
+    /* Content Heading */
+    .cont_heading{
+        font-size: 2rem;
+    }
+
+    /* Skills */
     #skills_png{
         width: 20rem;
         
     }
+
+    /* Education */
+    .edu_card{
+        max-width: 26rem;
+    }
+
+
 }
 
 @media only screen and (max-width: 740px){
+    .cont_heading{
+        font-size: 1.2rem;
+    }
+    /* Introduction */
+    .intro_cont{
+        height: 60%;
+    }
+    .ic_cont{
+        margin: 0.8rem;
+    }
+    #ic_one{
+        font-size: 2.3rem;
+    }
+
+    #ic_two{
+        font-size: 1.1rem;
+    }
+    #abt_cont{
+        display: none;
+        padding: 0.8rem 10% 0.8rem;
+        font-size: 0.7rem;
+    }
+
+    /* Skills */
     
+    .skills{
+        height: 35rem;
+    }
+
+    /* Education */
+    .education{
+        height: auto;
+    }
+    .edu_icon{
+        height: auto;
+    }
+
+    .edu_card{
+        max-width: 15rem;
+    }
+    .ec_head{
+        font-size: 15px;
+    }
+    
+    .ec_1{
+        font-size: 13px;
+    }
+    .ec_2{
+        font-size: 10px;
+    }
+    .ec_3{
+        font-size: 11px;
+    }
+    
+
+    /* Email */
+    input[type=text],input[type=name]{
+        width: 20rem;
+    }
+    textarea{
+        width: 20rem;
+    }
 }

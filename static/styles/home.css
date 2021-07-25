@@ -29,7 +29,7 @@ a{
 }
 .intro_cont{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
 }
 .ic_cont{
@@ -69,7 +69,7 @@ a{
 }
 
 .skills_icon{
-    width: 30rem;
+    width: 100%;
     height: 20rem;
 }
 
@@ -81,8 +81,8 @@ a{
 
 #skills_png{
     display: block;
-    max-width:47rem;
-    max-height:35rem;
+    max-width:43rem;
+    max-height:31rem;
     width: auto;
     height: auto;
 }
@@ -103,7 +103,7 @@ a{
 .edu_icon{
     align-items: center;
     align-self: flex-start;
-    width: 30rem;
+    width: 100%;
     height: 20rem;
     margin-right: 1.5rem;
 }
@@ -135,21 +135,34 @@ a{
     
 }
 
+.ec_head{
+    font-size: 1.5rem;
+}
+
+.ec_1{
+    font-size: 1.2rem;
+}
+.ec_2{
+    font-size: 1rem;
+}
+.ec_3{
+    font-size: 1.3rem;
+}
+
 
 /* Certificates Section */
 
 .certificates{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    height: 100vh;
+    flex-direction: column;
+    height: 100%;
     padding: 2rem 1rem 2rem 1rem;
     background-color: whitesmoke;
 }
 
 .certificates_icon{
-    width: 30rem;
-    height: 20rem;
+   margin: 2rem;
 }
 #certificates_img{
     width: auto;
@@ -183,6 +196,7 @@ a{
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
+    background-color: white;
 }
 
 .card:hover {
