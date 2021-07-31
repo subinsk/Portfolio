@@ -8,8 +8,20 @@ function scrollFunction() {
     } else {
         $('header').css({'box-shadow':'None'})
     }
+
+    if(document.body.scrollTop>100 || document.documentElement.scrollTop > 100){
+        $('.float_btn').css({'display':'flex'})
+    }
+    else(
+        $('.float_btn').css({'display':'none'})
+    )
   }
 
+function f_btn(){
+  $('html','body').animate({
+      'scrollTop': $('.float_btn').position.top
+  })  
+}
 function posmate() {
     $('html, body').animate({
         'scrollTop' : $("#posmat").position().top

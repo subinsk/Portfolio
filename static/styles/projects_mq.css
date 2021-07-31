@@ -1,0 +1,16 @@
+@media only screen and (max-width:625px){
+    .projects_icon{
+        height:18rem;
+    }
+    #projects_icon{
+        width: 5rem;
+    }
+    .cont_heading{
+        font-size: 2.5rem;
+    }
+
+    .pr_cards{
+        justify-content: center;
+        align-items: center;
+    }
+}

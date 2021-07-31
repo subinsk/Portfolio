@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/styles/projects.css">
+    <link rel="stylesheet" href="/static/styles/projects_mq.css">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Projects @Subin</title>
@@ -34,23 +35,39 @@
         <div class="pr_cards">
             <div class="pr_card" id="posmat"  onclick="posmate()">
                 <div class="card_img" style="background-image: url(/static/images/projects/1.jpg); "></div>
-                <div class="card_cont"><h3>Posmate</h3></div>
+                <hr>
+                <div class="overlay">
+                    <div class="card_cont"><h3>Posmate</h3></div>
+                    <button class="view">VIEW</button>
+                </div>
             </div>
             <div class="pr_card" id="DSC" onclick="DSC()">
                 <div class="card_img" style="background-image: url(/static/images/projects/DSC.svg); "></div>
-                <div class="card_cont"><h3>DSC-CTAE</h3></div>
+                <div class="overlay">
+                    <div class="card_cont"><h3>DSC-CTAE</h3></div>
+                    <button class="view">VIEW</button>
+                </div>
             </div>
             <div class="pr_card" id="srijan" onclick="srijan()">
                 <div class="card_img" style="background-image: url(/static/images/projects/srijan.png); "></div>
-                <div class="card_cont"><h3>Srijan Academy</h3></div>
+                <div class="overlay">
+                    <div class="card_cont"><h3>Srijan Academy</h3></div>
+                    <button class="view">VIEW</button>
+                </div>
             </div>
             <div class="pr_card" id="geek" onclick="geek()">
                 <div class="card_img" style="background-image: url(/static/images/projects/geekbot.jpg);"></div>
-                <div class="card_cont"><h3>GeekBOT</h3></div>
+                <div class="overlay">
+                    <div class="card_cont"><h3>GeekBOT</h3></div>
+                    <button class="view">VIEW</button>
+                </div>
             </div>
             <div class="pr_card" id="krypto" onclick="krypto()">
                 <div class="card_img" style="background-image: url(/static/images/projects/kryptocase.png); background-size: cover;"></div>
-                <div class="card_cont"><h3>Kryptocase</h3></div>
+                <div class="overlay">
+                    <div class="card_cont"><h3>Kryptocase</h3></div>
+                    <button class="view">VIEW</button>
+                </div>
             </div>
         </div>
     </div>
@@ -58,6 +75,7 @@
     <div class="pr_des">
         <div class="pr">
             <div class="pr_head">Posmate</div>
+            <hr>
             <div class="pr_tech">
                 <p>A Robust AI-Driven System (Web App) That Monitors : Posture (7 Body KeyPoints) Relative Distance from Display Which Notifies User when his/her Posture or Relative Distance is Wrong with a Suggestion on how to improve it! Using</p>
             </div>
@@ -68,8 +86,8 @@
         </div>
         <div class="pr">
             <div class="pr_head">DSC-CTAE</div>
+            <hr>
             <div class="pr_tech">
-
             </div>
             <div class="pr_abt">
                 <ul>
@@ -83,6 +101,7 @@
         </div>
         <div class="pr">
             <div class="pr_head">Srijan Academy</div>
+            <hr>
             <div class="pr_tech">
 
             </div>
@@ -95,6 +114,7 @@
         </div>
         <div class="pr">
             <div class="pr_head">GeekBOT</div>
+            <hr>
             <div class="pr_tech">
                 <p>Discord Python Library </p>
             </div>
@@ -107,6 +127,7 @@
         </div>
         <div class="pr">
             <div class="pr_head">Kryptocase</div>
+            <hr>
             <div class="pr_tech">
                 <p>API which gives Real Time API</p>
                 <p>tkinter for GUI</p>
@@ -116,6 +137,9 @@
             </div>
         </div>
     </div>
+    <button onclick="f_btn()" class="float_btn">
+        Top
+    </button>
 
     <footer>
         <div class="footer_cont">
