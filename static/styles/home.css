@@ -135,7 +135,7 @@ a{
     border-radius: 1.4rem;
     color: #002240;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    /* background-image: linear-gradient(to bottom right, #002240 , #1a7ca3); */
+    background-image: radial-gradient(#f5f7ff, #ffffff00);
     transition: 0.3s;
     
 }

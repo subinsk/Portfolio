@@ -76,16 +76,26 @@
     }
 
     /* Skills */
+    .skills{
+        width: 100%;
+    }
     #skills_png{
         width: 20rem;
         
     }
 
     /* Education */
+    .edu_icon{
+        width: 100%;
+    }
     .edu_card{
         max-width: 26rem;
     }
 
+    /* Certificates */
+    .certificates_icon{
+        width: 100%;
+    }
 
 }
 

@@ -49,6 +49,19 @@ li:after {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
+li.white:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
 li.black:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
@@ -62,12 +75,24 @@ li.black:after {
     width: 0;
   }
 
-li:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
-
-
+  
+  li.highlight:after {    
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      position: absolute;
+      background: rgb(0, 0, 0);
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 100%; 
+      left: 0;
+    }
+    
+    li:hover:after { 
+        width: 100%; 
+        left: 0; 
+      }
 
 .sm_header{
     display: flex;
