@@ -1,4 +1,37 @@
-import anime from '/static/scripts/anime.es.js';
+function f_btn(){
+    $('html','body').animate({
+        'scrollTop': $('.h_comp').position().top
+    })  
+  }
+  
+  function posmate() {
+      $('html, body').animate({
+          'scrollTop' : $("#posmate").position().top
+      });
+  }
+  
+  function DSC(){
+      $('html, body').animate({
+          'scrollTop' : $("#DSC").position().top
+      });
+  }
+  function srijan(){
+      $('html, body').animate({
+          'scrollTop' : $("#srijan").position().top
+      });
+  }
+  
+  function geek(){
+      $('html, body').animate({
+          'scrollTop' : $("#geek").position().top
+      });
+  }
+  
+  function krypto(){
+      $('html, body').animate({
+          'scrollTop' : $("#krypto").position().top
+      });
+  }
 
 window.onscroll = function() {scrollFunction()};
 
@@ -15,40 +48,9 @@ function scrollFunction() {
     else(
         $('.float_btn').css({'display':'none'})
     )
-  }
-
-function f_btn(){
-  $('html','body').animate({
-      'scrollTop': $('.float_btn').position.top
-  })  
-}
-function posmate() {
-    $('html, body').animate({
-        'scrollTop' : $("#posmat").position().top
-    });
-}
-function DSC(){
-    $('html, body').animate({
-        'scrollTop' : $("#DSC").position().top
-    });
-}
-function srijan(){
-    $('html, body').animate({
-        'scrollTop' : $("#srijan").position().top
-    });
 }
 
-function geek(){
-    $('html, body').animate({
-        'scrollTop' : $("#geek").position().top
-    });
-}
 
-function krypto(){
-    $('html, body').animate({
-        'scrollTop' : $("#krypto").position().top
-    });
-}
 
 
 $('#year').html(new Date().getFullYear())

@@ -201,11 +201,11 @@ a{
     border-radius: 5px; 
     padding: 0.5rem;
     margin: 1rem;
-    height: 14.5rem;
+    height: 15.5rem;
     width: 15rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-content: center;
     background-color: white;
 }
