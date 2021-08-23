@@ -1,6 +1,6 @@
 function f_btn(){
-    $('html','body').animate({
-        'scrollTop': $('.h_comp').position().top
+    $('html, body').animate({
+        'scrollTop': $('.projects').position().top
     })  
   }
   
