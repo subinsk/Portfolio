@@ -4,6 +4,11 @@ function f_btn(){
     })  
   }
   
+  function classroom() {
+      $('html, body').animate({
+          'scrollTop' : $("#classroom").position().top
+      });
+  }
   function posmate() {
       $('html, body').animate({
           'scrollTop' : $("#posmate").position().top

@@ -190,6 +190,8 @@ hr{
     flex-direction: column;
     width: 100%;
     height: auto;
+    background-image: url('../images/bimg/bimg.svg');
+    background-size: contain;
 }
 
 .pr{

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,27 @@
     <link rel="stylesheet" href="/static/styles/projects.css">
     <link rel="stylesheet" href="/static/styles/projects_mq.css">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Projects @Subin</title>
 </head>
+
 <body>
     <div class="m_header">
         <h4 style="color: white;">Subin S K</h4>
-        <img class="hb_icon" src="https://img.icons8.com/material-rounded/96/000000/menu.png"/>
+        <img class="hb_icon" src="https://img.icons8.com/material-rounded/96/000000/menu.png" />
     </div>
 
     <header>
         <div class="headers">
             <button class="h_comp">
                 <a href="/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                    </svg> 
-                &nbsp;Back to Home
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                        class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                    </svg>
+                    &nbsp;Back to Home
                 </a>
             </button>
         </div>
@@ -35,39 +40,72 @@
             <p class="cont_heading">Projects</p>
         </div>
         <div class="pr_cards">
-            <div class="pr_card"  onclick="posmate();">
-                <div class="card_img" style="background-image: url(/static/images/projects/1.jpg); "></div>
+
+            <!-- Classroom-X -->
+            <div class="pr_card" onclick="classroom();">
+                <div class="card_img" style="background-image: url(/static/images/projects/classroom.jpg); "></div>
                 <hr>
                 <div class="overlay">
-                    <div class="card_cont"><h3>Posmate</h3></div>
+                    <div class="card_cont">
+                        <h3>ClassRoom-X</h3>
+                    </div>
                     <button class="view">VIEW</button>
                 </div>
             </div>
+            <!-- Posmate -->
+            <div class="pr_card" onclick="posmate();">
+                <div class="card_img" style="background-image: url(/static/images/projects/posmate.jpg); "></div>
+                <hr>
+                <div class="overlay">
+                    <div class="card_cont">
+                        <h3>Posmate</h3>
+                    </div>
+                    <button class="view">VIEW</button>
+                </div>
+            </div>
+
+            <!-- DSC -->
             <div class="pr_card" onclick="DSC()">
                 <div class="card_img" style="background-image: url(/static/images/projects/DSC.svg); "></div>
                 <div class="overlay">
-                    <div class="card_cont"><h3>DSC-CTAE</h3></div>
+                    <div class="card_cont">
+                        <h3>DSC-CTAE</h3>
+                    </div>
                     <button class="view">VIEW</button>
                 </div>
             </div>
+
+            <!-- Srijan Academy -->
             <div class="pr_card" onclick="srijan()">
                 <div class="card_img" style="background-image: url(/static/images/projects/srijan.png); "></div>
                 <div class="overlay">
-                    <div class="card_cont"><h3>Srijan Academy</h3></div>
+                    <div class="card_cont">
+                        <h3>Srijan Academy</h3>
+                    </div>
                     <button class="view">VIEW</button>
                 </div>
             </div>
+
+            <!-- GeekBOT -->
             <div class="pr_card" onclick="geek()">
                 <div class="card_img" style="background-image: url(/static/images/projects/geekbot.jpg);"></div>
                 <div class="overlay">
-                    <div class="card_cont"><h3>GeekBOT</h3></div>
+                    <div class="card_cont">
+                        <h3>GeekBOT</h3>
+                    </div>
                     <button class="view">VIEW</button>
                 </div>
             </div>
+
+            <!-- KryptoCase -->
             <div class="pr_card" onclick="krypto()">
-                <div class="card_img" style="background-image: url(/static/images/projects/kryptocase.png); background-size: cover;"></div>
+                <div class="card_img"
+                    style="background-image: url(/static/images/projects/kryptocase.png); background-size: cover;">
+                </div>
                 <div class="overlay">
-                    <div class="card_cont"><h3>Kryptocase</h3></div>
+                    <div class="card_cont">
+                        <h3>Kryptocase</h3>
+                    </div>
                     <button class="view">VIEW</button>
                 </div>
             </div>
@@ -78,12 +116,47 @@
 
     <div class="prs autofix">
         <div class="pr">
-            <div class="pr_head" id="posmate" >Posmate</div>
+            <div class="pr_head" id="classroom">ClassRoom-X</div>
             <hr>
-            <img class="pr_img" src="/static/images/projects/1.jpg" alt="Posmate">
+            <img class="pr_img" src="/static/images/projects/classroom.jpg" alt="Posmate">
             <div class="pr_desc">
                 <p><b>About the Project: </b></p>
-                <p>A Robust AI-Driven System (Web App) That Monitors : Posture (7 Body KeyPoints) Relative Distance from Display Which Notifies User when his/her Posture or Relative Distance is Wrong with a Suggestion on how to improve it!</p>
+                <p>A Robust E-Classroom Platform With Lowest Data-Transmission Leveraging on AI for Overcoming the
+                    Internet Access Inequity Our Approach Was to Take Shortest Path Instead of Fastest Vehicle , So
+                    Instead of Direct Streaming We Regenerated Teacher's Screen on Student Console With Bare-Minimum
+                    Data-Streaming and Client-Side AI Monitoring Students Presence.</p>
+            </div>
+            <div class="pr_tech">
+                <p><b>Technologies Used:</b></p>
+                <ul>
+                    <li>Python/Flask</li>
+                    <li>Socket.IO</li>
+                    <li>Tensorflow.js | BlazeFace</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+            <div class="links">
+                <div class="icon">
+                    <img class="icon_img" src="/static/images/icons/github_header.png" alt="GitHub">
+                    <a class="icon_txt" href="https://github.com/Garvit9000c/ML9-FORCES_CLASSROOM-X">GitHub</a>
+                </div>
+                <div class="icon">
+                    <img class="icon_img" src="/static/images/icons/web.png" alt="GitHub">
+                    <a class="icon_txt" href="https://classroom-x.herokuapp.com/">WebApp</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pr">
+            <div class="pr_head" id="posmate">Posmate</div>
+            <hr>
+            <img class="pr_img" src="/static/images/projects/posmate.jpg" alt="Posmate">
+            <div class="pr_desc">
+                <p><b>About the Project: </b></p>
+                <p>A Robust AI-Driven System (Web App) That Monitors : Posture (7 Body KeyPoints) Relative Distance from
+                    Display Which Notifies User when his/her Posture or Relative Distance is Wrong with a Suggestion on
+                    how to improve it!</p>
             </div>
             <div class="pr_tech">
                 <p><b>Technologies Used:</b></p>
@@ -107,12 +180,14 @@
         </div>
 
         <div class="pr">
-            <div class="pr_head" id="DSC" >DSC-CTAE</div>
+            <div class="pr_head" id="DSC">DSC-CTAE</div>
             <hr>
             <img class="pr_img" src="/static/images/projects/DSC.svg" alt="Posmate">
             <p><b>About the Project: </b></p>
             <div class="pr_desc">
-                A full fledged website for our College Community which has records of all students. We conduct Hackathons and give Projects there. Also, it contains summary of Codeforces Contests by the user in their dashboard. 
+                A full fledged website for our College Community which has records of all students. We conduct
+                Hackathons and give Projects there. Also, it contains summary of Codeforces Contests by the user in
+                their dashboard.
                 <ul class="pr_tech">
                     <li>Logo designed by me</li>
                     <li>Authentication System</li>
@@ -124,7 +199,7 @@
             </div>
             <div class="pr_tech">
                 <p><b>Technologies Used:</b></p>
-            <ul>
+                <ul>
                     <li>NodeJS</li>
                     <li>ExpressJS</li>
                     <li>MongoDB</li>
@@ -132,7 +207,7 @@
                     <li>CI/CD Pipeline</li>
                     <li>GitHub API</li>
                     <li>Codeforces API</li>
-            </ul>
+                </ul>
             </div>
             <div class="links">
                 <div class="icon">
@@ -147,12 +222,13 @@
         </div>
 
         <div class="pr">
-            <div class="pr_head" id="geek" >GeekBOT</div>
+            <div class="pr_head" id="geek">GeekBOT</div>
             <hr>
             <img class="pr_img" src="/static/images/projects/geekbot.jpg" alt="Posmate">
             <div class="pr_desc">
                 <p><b>About the Project: </b></p>
-                Advance Discord Bot with all the Administrative Moderation Power, Codeforces and GitHub access, which can take your Tech Server to another level.
+                Advance Discord Bot with all the Administrative Moderation Power, Codeforces and GitHub access, which
+                can take your Tech Server to another level.
                 <ul class="pr_tech">
                     <li>Administrative commands</li>
                     <li>Notifies about Codeforces Contest</li>
@@ -173,7 +249,7 @@
         </div>
 
         <div class="pr">
-            <div class="pr_head" id="srijan" >Srijan Academy</div>
+            <div class="pr_head" id="srijan">Srijan Academy</div>
             <hr>
             <img class="pr_img" src="/static/images/projects/srijan.png" alt="Posmate">
             <div class="pr_desc">
@@ -204,9 +280,9 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="pr">
-            <div class="pr_head" id="krypto" >Kryptocase</div>
+            <div class="pr_head" id="krypto">Kryptocase</div>
             <hr>
             <img class="pr_img" src="/static/images/projects/kryptocase.png" alt="Posmate">
             <div class="pr_desc">
@@ -222,7 +298,7 @@
             </div>
             <div class="pr_tech">
                 <p><b>Technologies Used:</b></p>
-                <ul>    
+                <ul>
                     <li>API which gives Real Time Details of Cryptocurrency</li>
                     <li>tkinter for GUI</li>
                 </ul>
@@ -243,24 +319,23 @@
 <footer>
     <div class="footer_cont">
         <h5>Copyright &copy; <span id="year"></span></h2>
-            <span id="f_outro">Made with 🤍 by <a style="text-decoration: underline; color: white;" href="https://www.linkedin.com/in/subin-s-k-9b767219a/">Subin S K</a></span>
-        </div>
-        <div class="sm_footer">
-            <a href=""><img class="sm_icons_footer" src="/static/images/icons/gmail_footer.png" alt="Gmail"></a>
-            <a href="https://www.linkedin.com/in/subin-s-k-9b767219a/"><img class="sm_icons_footer" src="/static/images/icons/linkedin_footer.png" alt="LinkedIn"> </a>
-            <a href="https://github.com/subinsk"><img class="sm_icons_footer" src="/static/images/icons/github_footer.png" alt="GitHub"> </a>
-            <a href="https://www.instagram.com/subin_sk/"><img class="sm_icons_footer" src="/static/images/icons/instagram_footer.png" alt="Instagram"></a>
-        </div>
+            <span id="f_outro">Made with 🤍 by <a style="text-decoration: underline; color: white;"
+                    href="https://www.linkedin.com/in/subin-s-k-9b767219a/">Subin S K</a></span>
+    </div>
+    <div class="sm_footer">
+        <a href=""><img class="sm_icons_footer" src="/static/images/icons/gmail_footer.png" alt="Gmail"></a>
+        <a href="https://www.linkedin.com/in/subin-s-k-9b767219a/"><img class="sm_icons_footer"
+                src="/static/images/icons/linkedin_footer.png" alt="LinkedIn"> </a>
+        <a href="https://github.com/subinsk"><img class="sm_icons_footer" src="/static/images/icons/github_footer.png"
+                alt="GitHub"> </a>
+        <a href="https://www.instagram.com/subin_sk/"><img class="sm_icons_footer"
+                src="/static/images/icons/instagram_footer.png" alt="Instagram"></a>
+    </div>
     </div>
 </footer>
 
-    <!-- Scripts -->
-    <script src="/static/scripts/projects.js"></script>
-    <script type="commonjs" src="/static/scripts/anime.min.js"></script>
+<!-- Scripts -->
+<script src="/static/scripts/projects.js"></script>
+<script type="commonjs" src="/static/scripts/anime.min.js"></script>
+
 </html>
-
-
-    
-
-
-
